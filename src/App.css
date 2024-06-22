@@ -1,0 +1,100 @@
+/* Center the text and add some global styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0; /* Light background color */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Container for the entire application */
+.App {
+  text-align: center;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Survey form wrapper */
+.Survey-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Form container */
+.App-form {
+  width: 100%;
+  max-width: 600px; /* Adjusted maximum width for better readability */
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields */
+.App-form input,
+.App-form select,
+.App-form textarea {
+  width: 100%;
+  padding: 16px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* Form submit button */
+.App-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.App-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Form labels */
+.App-form label {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App-form {
+    padding: 30px 20px;
+  }
+
+  .App-form input,
+  .App-form select,
+  .App-form textarea {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .App-form button[type="submit"] {
+    padding: 14px 20px; /* Adjust button padding for smaller screens */
+  }
+
+  .App-form label {
+    font-size: 18px; /* Adjust label font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-form {
+    padding: 20px;
+  }
+}
